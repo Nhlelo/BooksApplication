@@ -30,6 +30,11 @@
                             </label>
                         </th>
                         <th>
+                            <label asp-for="Books.FirstOrDefault().ISBN13">
+
+                            </label>
+                        </th>
+                        <th>
                             <label>
                                 Actions
                             </label>
@@ -43,6 +48,9 @@
                             </td>
                             <td>
                                 @Html.DisplayFor(m => book.Author)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(m => book.ISBN13)
                             </td>
                             <td>
                                 <button class="btn btn-success btn-sm text-white">Edit</button>

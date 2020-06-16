@@ -14,5 +14,8 @@ namespace BooksList.Model
         public string Name { get; set; }
         [Required]
         public string Author { get; set; }
+        [Required]
+        [StringLength(13)]
+        public string ISBN13 { get; set; }
     }
 }
